@@ -117,6 +117,30 @@ has set. Do you see any communication, API calls or such?
 Conjoiners share one nest configuration, which describes the group of
 conjoiners that know each other as well as communictaion protocol details.
 
+## Configuration
+
+Nest configuration is done through a JSON file:
+
+    {
+        "recv_timeout": 50,
+        "conjoiners":
+        [
+            {
+                "name": "test",
+                "url": "ipc:///tmp/conjoiners_test"
+            },
+            {
+                "name": "test2",
+                "url": "ipc:///tmp/conjoiners_test2"
+            }
+        ]
+    }
+
+"conjoiners" lists all known conjoiners with their names and
+(currently) 0MQ urls. "recv_timeout" is in milliseconds, and is used
+in order to avoid too long blocking when receiving transenlightenments
+from other conjoiners through a 0MQ socket. This is it right now.
+
 ## Current state of work
 
 I've been working on the idea for several months. Right now, by the
