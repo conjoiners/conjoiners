@@ -123,8 +123,8 @@ I've been working on the idea for several months. Right now, by the
 time of this first appearancd on GitHub, I come up with two supported
 platforms:
 
-[conjoiners-python](https://github.com/conjoiners/conjoiners-python)
-[conjoiners-node.js](https://github.com/conjoiners/conjoiners-node.js)
+*    [conjoiners-python](https://github.com/conjoiners/conjoiners-python)
+*    [conjoiners-node.js](https://github.com/conjoiners/conjoiners-node.js)
 
 I picked these two primarilly for two reasons: it's both very popular
 platforms with lots of existing libraries and running solutions. And
