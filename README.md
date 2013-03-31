@@ -5,7 +5,7 @@ existing (or new) systems written in different languages and running
 on different platforms. conjoiners is minimally invasive in its
 programming model, but complex behind the scenes.
 
-Idea and first implementations are done by me, Pavlo Baron.
+Idea and first implementations are done by me, Pavlo Baron (pavlobaron).
 
 ## Why reactive programming?
 
