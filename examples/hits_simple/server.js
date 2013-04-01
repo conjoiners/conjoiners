@@ -15,7 +15,6 @@ var doit = function() {
         c.count++;
     }
 
-    //c.count++;
     console.log("current count: " + c.count);
     setTimeout(doit, 1);
 }
