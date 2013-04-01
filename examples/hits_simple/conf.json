@@ -1,0 +1,14 @@
+{
+    "recv_timeout": 50,
+    "conjoiners":
+    [
+        {
+            "name": "server",
+            "url": "tcp://127.0.0.1:8911"
+        },
+        {
+            "name": "stats",
+            "url": "tcp://127.0.0.1:8912"
+        }
+    ]
+}

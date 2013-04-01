@@ -141,6 +141,14 @@ Nest configuration is done through a JSON file:
 in order to avoid too long blocking when receiving transenlightenments
 from other conjoiners through a 0MQ socket. This is it right now.
 
+## Examples
+
+Examples can be found under ./examples.
+
+*    hits_simple is an example how to count a number in a Node.js server and use conjoiners to gather some statistics in a Python conjoiner. Simply fire up "node server.js" in one shell and "python stats.py" in another. "conf.json" is the corresponding nest configuration. Example uses TCP as 0MQ transport.
+
+More examples to come.
+
 ## Current state of work
 
 I've been working on the idea for several months. Right now, by the
