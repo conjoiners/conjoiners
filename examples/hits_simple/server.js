@@ -4,9 +4,7 @@ function Test() {
 };
 
 var c = new Test();
-conjoiners.implant(c,
-                   '/Users/pb/code/conjoiners/conjoiners/examples/hits_simple/conf.json',
-                   'server');
+conjoiners.implant(c, 'conf.json', 'server');
 
 var doit = function() {
     if (c.count == undefined) {
