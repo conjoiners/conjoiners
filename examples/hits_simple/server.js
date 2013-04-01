@@ -4,11 +4,18 @@ function Test() {
 };
 
 var c = new Test();
-conjoiners.implant(c, "/Users/pb/code/conjoiners/conjoiners/examples/hits_simple/conf.json", "server");
+conjoiners.implant(c,
+                   '/Users/pb/code/conjoiners/conjoiners/examples/hits_simple/conf.json',
+                   'server');
 
-c.count = 0;
 var doit = function() {
-    c.count++;
+    if (c.count == undefined) {
+        c.count = 0;
+    } else {
+        c.count++;
+    }
+
+    //c.count++;
     console.log("current count: " + c.count);
     setTimeout(doit, 1);
 }
